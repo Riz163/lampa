@@ -230,7 +230,7 @@
           var menu_item = $('<li class="menu__item selector focus" data-action="sisi"><div class="menu__ico">' + ico + '</div><div class="menu__text">РљР»СѓР±РЅРёС‡РєР°</div></li>');
           menu_item.on('hover:enter', function () {
             Lampa.Select.show({
-              title: 'РљР°С‚Р°Р»РѕРі',
+              title: '12',
               items: catalogs,
               onSelect: function onSelect(a) {
                 Lampa.Activity.push({
