@@ -46,9 +46,10 @@ export default {
     full_episode: 'Эпизод',
     full_directing: 'Режиссура',
     full_writing: 'Сценарий',
+    full_keywords: 'Теги',
 
     settings_cub_sync: 'Синхронизация',
-    settings_cub_sync_descr: 'Синхронизация с сервисом CUB: синхронизация ваших закладок, истории просмотров, меток и тайм-кодов. Сайт: www.cub.watch',
+    settings_cub_sync_descr: 'Синхронизация с сервисом CUB: синхронизация ваших закладок, истории просмотров, меток и тайм-кодов. Сайт: www.cub.red',
     settings_cub_account: 'Аккаунт',
     settings_cub_logged_in_as: 'Вошли как',
     settings_cub_profile: 'Профиль',
@@ -131,7 +132,6 @@ export default {
     settings_rest_device: 'Название устройства',
     settings_rest_device_placeholder: 'Например: Моя Лампа',
     settings_rest_cache: 'Очистить кэш',
-    settings_rest_cache_descr: 'Будут очищены все настройки и данные',
     settings_rest_tmdb_example: 'Например:',
     settings_rest_tmdb_api_descr: 'Для получения данных',
     settings_rest_tmdb_image_descr: 'Для получения изображений',
@@ -141,6 +141,13 @@ export default {
     settings_rest_card_episodes_descr: 'Отображать отметки эпизодов на карточках',
     settings_rest_cache_images: 'Кэш изображений',
     settings_rest_cache_images_descr: 'Кэшировать постеры и фоны в локальное хранилище',
+    settings_rest_protocol_use: 'Безопасное соединение',
+    settings_rest_protocol_descr: 'Использовать протокол HTTPS',
+    settings_rest_cache_only: 'Только кеш',
+    settings_rest_cache_only_descr: 'Основные настройки сохранятся',
+    settings_rest_cache_all: 'Кеш и данные',
+    settings_rest_cache_all_descr: 'Будут очищены все настройки и данные',
+    settings_rest_cache_calculate: 'Сколько осталось памяти',
 
     settings_parser_use: 'Использовать парсер',
     settings_parser_use_descr: 'Тем самым, вы соглашаетесь принять на себя всю ответственность за использование публичных ссылок для просмотра торрент и онлайн контента.',
@@ -225,6 +232,25 @@ export default {
     settings_webos_launcher_add_device: 'Установить как стартовое',
     settings_webos_launcher_remove_device: 'Убрать из стартовых приложений',
 
+    settings_parental_control_param_time_always: 'Всегда',
+    settings_parental_control_param_time_once: 'Один раз',
+    settings_parental_control_param_time_10: 'Через 10 минут',
+    settings_parental_control_param_time_20: 'Через 20 минут',
+    settings_parental_control_param_time_30: 'Через 30 минут',
+    settings_parental_control_param_time_60: 'Через 1 час',
+    settings_parental_control_param_time_120: 'Через 2 часа',
+    settings_parental_control_change_pin: 'Изменить PIN-код',
+    settings_parental_control_demand_title: 'Когда запрашивать',
+    settings_parental_control_demand_descr: 'Через какое время запрашивать PIN-код',
+    settings_parental_control_enabled: 'Включено',
+    settings_parental_control_disabled: 'Отключено',
+
+    parental_control_input_new_code: 'Введите новый PIN-код',
+    parental_control_confirm_new_code: 'Повторите PIN-код',
+    parental_control_no_match_code: 'PIN-код не совпадает с прошлым кодом',
+    parental_control_input_code: 'Введите PIN-код',
+    parental_control_input_error: 'Вы ввели неправильный PIN-код',
+    
 
     torent_nohash_reasons: 'Причины',
     torent_nohash_reason_one: 'TorServer не смог скачать торрент файл',
@@ -407,6 +433,10 @@ export default {
     title_buffer: 'Буфер',
     title_upcoming_episodes: 'Ближайшие выходы эпизодов',
     title_reactions: 'Реакции',
+    title_last_year: 'Прошлый год',
+    title_reset: 'Перезагрузить',
+    title_left:'Осталось',
+    title_parental_control: 'Родительский контроль',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
@@ -702,6 +732,8 @@ export default {
     empty_title_two: 'Здесь пусто',
     empty_text_two: 'На данный момент список пустой',
 
+    back_to_card: 'Вернуться в карточку',
+
     menu_main: 'Главная',
     menu_movies: 'Фильмы',
     menu_tv: 'Сериалы',
@@ -747,6 +779,7 @@ export default {
     time_reset: 'Сбросить тайм-код',
 
     settings_clear_cache: 'Кеш и данные очищены',
+    settings_clear_cache_only: 'Кеш очищен',
     settings_user_links: 'Пользовательская ссылка',
     settings_for_local: 'Для локального TorrServer',
     settings_add: 'Добавить',
@@ -807,7 +840,7 @@ export default {
     helper_torrents_view: 'Для сброса тайм-кода и вызова меню удерживайте клавишу (ОК)',
 
     fav_sync_title: 'Синхронизация закладок',
-    fav_sync_text: 'Ваши любимые закладки вместе с Вами. Подключите синхронизацию и просматривайте на любом устройстве. <br><br>Для этого зарегистрируйтесь на сайте www.cub.watch, создайте профиль и авторизуйтесь в приложение.',
+    fav_sync_text: 'Ваши любимые закладки вместе с Вами. Подключите синхронизацию и просматривайте на любом устройстве. <br><br>Для этого зарегистрируйтесь на сайте www.cub.red, создайте профиль и авторизуйтесь в приложение.',
     fav_sync_site: 'Сайт',
     fav_remove_title: 'Удалить из истории',
     fav_remove_descr: 'Удалить выделенную карточку',
@@ -885,7 +918,7 @@ export default {
     notice_new_quality: 'Доступно новое качество',
     notice_quality: 'Качество',
     notice_new_episode: 'Новая серия',
-    notice_none: 'У вас еще нет никаких уведомлений, зарегистрируйтесь на сайте <b>www.cub.watch</b>, чтобы следить за новыми сериями и релизами.',
+    notice_none: 'У вас еще нет никаких уведомлений, зарегистрируйтесь на сайте <b>www.cub.red</b>, чтобы следить за новыми сериями и релизами.',
     notice_in_quality: 'В качестве',
     notice_none_account: 'У вас еще нет никаких уведомлений, добавьте сериалы в закладки и ожидайте уведомления о новых сериях.',
     notice_none_system: 'На данный момент у вас отсутствуют уведомления. Мы обязательно оповестим вас, когда появятся новые уведомления.',
@@ -905,14 +938,19 @@ export default {
     account_profile_main: 'Общий',
     account_export_secuses: 'Экспорт успешно завершён',
     account_export_fail: 'Ошибка при экспорте',
+    account_export_fail_500: 'Неизвестная ошибка',
+    account_export_fail_610: 'Вы исчерпали лимит на сегодня',
+    account_export_fail_200: 'Ошибка базы данных, попробуйте позже',
+    account_export_fail_600: 'Ошибка, не удалось загрузить файл',
+    account_export_fail_620: 'Ошибка, файл не передан',
     account_import_secuses: 'Импорт успешно завершён',
     account_import_fail: 'Ошибка при импорте',
     account_imported: 'импортировано',
     account_reload_after: 'перезагрузка через 5 сек.',
-    account_create: 'Откройте больше возможностей с аккаунтом CUB. Зарегистрируйтесь на сайте <span class="account-modal__site">www.cub.watch</span> и получите доступ к синхронизации ваших закладок, тайм-кодов и других возможностей аккаунта CUB.',
+    account_create: 'Откройте больше возможностей с аккаунтом CUB. Зарегистрируйтесь на сайте <span class="account-modal__site">www.cub.red</span> и получите доступ к синхронизации ваших закладок, тайм-кодов и других возможностей аккаунта CUB.',
     account_premium: 'Раскройте новые горизонты с аккаунтом CUB Premium! Наслаждайтесь увеличенными лимитами и обогащенным функционалом сервиса. Дополнительные возможности ждут вас уже сегодня!',
     account_premium_more: 'Подробнее о CUB Premium',
-    account_limited: 'Вы достигли максимального лимита. Увеличьте лимит с аккаунтом CUB Premium. Подробнее на сайте <span class="account-modal__site">www.cub.watch/premium</span>',
+    account_limited: 'Вы достигли максимального лимита. Увеличьте лимит с аккаунтом CUB Premium. Подробнее на сайте <span class="account-modal__site">www.cub.red/premium</span>',
     account_premium_include_1: 'Увеличение количество закладок',
     account_premium_include_2: 'Увеличение истории просмотров',
     account_premium_include_3: 'Увеличение количество тайм-кодов',
@@ -928,7 +966,7 @@ export default {
     account_code_enter: 'Введите шестизначный код',
     account_code_error: 'Возможно, вы ввели неверный или устаревший код',
     account_code_wrong: 'Возможно, вы указали неверный формат',
-    account_code_where: 'Перейдите на сайт <span class="account-add-device__site">cub.watch/add</span> и введите указанный там код.',
+    account_code_where: 'Перейдите на сайт <span class="account-add-device__site">cub.red/add</span> и введите указанный там код.',
     account_code_input: 'Ввести код',
 
 
@@ -1040,11 +1078,28 @@ export default {
 
     change_source_on_cub: 'Сменить источник на CUB',
 
+    tv_status_returning_series: 'Онгоинг',
+    tv_status_planned: 'Запланировано',
+    tv_status_in_production: 'В производстве',
+    tv_status_ended: 'Завершено',
+    tv_status_canceled: 'Отменено',
+    tv_status_pilot: 'Пилотный',
+    tv_status_released:'Выпущенный',
+    tv_status_rumored:'По слухам',
+    tv_status_post_production:'Скоро',
+
     input_detection_touch: 'Хотите переключить на сенсорное управление?',
     input_detection_mouse: 'Хотите переключить на управление мышью?',
     input_detection_remote: 'Хотите переключить на управление пультом?',
 
     https_text: 'Вы используйте протокол HTTPS, c которым Lampa работает некорректно. Для корректной работы приложения используйте адрес с протоколом HTTP',
+
+    premiere_author_recomend_1: 'Закажите пиццу и готовьтесь к драйву.',
+    premiere_author_recomend_2: 'Вечеринка только начинается.',
+    premiere_author_recomend_3: 'Подготовьтесь к адреналину.',
+    premiere_author_recomend_4: 'Готовы к незабываемому вечеру?',
+    premiere_author_recomend_5: 'Рекомендую к просмотру.',
+    premiere_title: 'Премьера',
 
     termsofuse_t_01: 'Правила использования',
     termsofuse_t_02: 'Lampa - это удобный инструмент для ознакомления с новинками киноиндустрии, включая фильмы, сериалы, мультфильмы и другую информацию. Для получения информации о фильмах используется открытый источник - сайт themoviedb.org',
@@ -1059,4 +1114,6 @@ export default {
     termsofuse_t_11: 'Нарушения авторских прав',
     termsofuse_t_12: 'Если вы обнаружили нарушение авторских прав в приложении Lampa - свяжитесь с разработчиками, используя раздел Контакты приложения. Однако, важно учесть, что приложение Lampa использует API от каталога themoviedb.org, который предоставляет открытый доступ к информации о фильмах и сериалах. Это означает, что информация, которая отображается в приложении Lampa, является общедоступной и не нарушает авторских прав.',
     termsofuse_t_13: 'Если вы считаете, что в приложении Lampa все же есть контент, нарушающий авторские права - обратитесь к правообладателю этого контента с просьбой удалить его со страниц сайта themoviedb.org. В свою очередь, приложение Lampa может удалить контент при получении соответствующего уведомления о нарушении авторских прав.',
+
+    install_app_apk_text: 'Мы заметили, что для запуска Lampa на Android вы используете MediaStationX. Мы рекомендуем вам установить Lampa в виде APK-приложения. Вы можете скачать последнюю версию приложения здесь:'
 }
